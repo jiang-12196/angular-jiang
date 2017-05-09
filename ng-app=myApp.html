@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="http://cdn.static.runoob.com/libs/angular.js/1.4.6/angular.min.js"></script>
+    <title>ng-app</title>
+</head>
+<body ng-app="myApp" ng-controller="myCtrl">
+{{firstName + lastName}}
+</body>
+<script>
+    var app = angular.module("myApp", []);
+    app.controller("myCtrl", function ($scope) {
+        $scope.firstName = "jiang";
+        $scope.lastName = 'zuohan';
+    })
+</script>
+
+</html>
